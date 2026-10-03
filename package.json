@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js",
-    "check": "node --check client.js && node --check server.js"
+    "build": "node -e \"console.log('Static site is ready.')\"",
+    "check": "node --check public/client.js"
   }
 }
