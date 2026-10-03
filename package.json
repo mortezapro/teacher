@@ -2,8 +2,9 @@
   "name": "simin-english-learning",
   "version": "1.0.0",
   "private": true,
+  "main": "index.js",
   "scripts": {
     "build": "node scripts/build-vercel.js",
-    "check": "node --check public/client.js"
+    "check": "node --check public/client.js && node --check index.js"
   }
 }
