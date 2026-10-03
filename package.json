@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "node -e \"console.log('Static site is ready.')\"",
+    "build": "node scripts/build-vercel.js",
     "check": "node --check public/client.js"
   }
 }

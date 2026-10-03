@@ -1,1 +1,3 @@
 .chareh/
+node_modules/
+.vercel/output/
