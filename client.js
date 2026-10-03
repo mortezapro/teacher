@@ -24,12 +24,14 @@ const suggestions = {
   }
 };
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+if (form && result) {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-  const data = new FormData(form);
-  const level = data.get("englishLevel");
-  const goal = data.get("goal");
+    const data = new FormData(form);
+    const level = data.get("englishLevel");
+    const goal = data.get("goal");
 
-  result.textContent = suggestions[level][goal];
-});
+    result.textContent = suggestions[level][goal];
+  });
+}
